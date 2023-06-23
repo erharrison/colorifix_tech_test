@@ -4,10 +4,11 @@ version = "0.1.0"
 description = "Emily Harrison's solution to the backend developer tehcnical test for Colorifix."
 authors = ["Emily <emilypbi@gmail.com>"]
 readme = "README.md"
-packages = [{include = "colorifix_tech_test"}]
+# packages = [{include = "colorifix_tech_test"}]
 
 [tool.poetry.dependencies]
 python = "^3.7"
+neo4j = "^5.9.0"
 
 
 [build-system]
