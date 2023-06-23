@@ -6,5 +6,9 @@ def create_data(data):
     return df
 
 
-def normalise_data(data_to_normalise):
-    pass
+def export_data(data_to_export,
+                export_path,
+                file_type="csv",
+                sep="\t",
+                encoding="utf-8"):
+    if
