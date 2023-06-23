@@ -9,7 +9,7 @@ class AccessLevel(StructuredNode):
 
 class Permission(StructuredNode):
     id = UniqueIdProperty()
-    name = StringProperty(required=True)
+    name = StringProperty(required=True, isnull=False)
 
     access_level = RelationshipTo(AccessLevel, 'ENABLES_ACCESS_LEVEL')
 
@@ -19,7 +19,7 @@ class Company(StructuredNode):
 
 class User(StructuredNode):
     id = UniqueIdProperty()
-    name = StringProperty(required=True)
+    name = StringProperty(required=True, regex="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/")
     copmanyId = IntegerProperty(required=True)
 
     company = RelationshipTo(Company, 'BELONGS_TO')
