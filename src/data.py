@@ -6,9 +6,8 @@ def create_data(data):
     return df
 
 
-def export_data(data_to_export,
+def export_data(dataframe_to_export,
                 export_path,
-                file_type="csv",
-                sep="\t",
-                encoding="utf-8"):
-    if
+                file_type="csv"):
+    if file_type == "csv":
+        dataframe_to_export.to_csv(export_path, index=False)

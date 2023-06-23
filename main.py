@@ -64,4 +64,5 @@ user_data = {
 }
 
 create_data_df = d.create_data(user_data)
-print(create_data_df)
+
+d.export_data(create_data_df, "data/data.csv")
