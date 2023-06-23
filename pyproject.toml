@@ -9,6 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.7"
 neo4j = "^5.9.0"
+neomodel = "^5.0.1"
 
 
 [build-system]
