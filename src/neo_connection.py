@@ -58,8 +58,8 @@ class Request(StructuredNode):
     company = RelationshipTo(User, "REQUEST_TARGET_COMPANY  ")
 
 
-def create_user(user_name, copmany_id):
-    User(name=user_name, companyId=copmany_id).save()
+def create_user(user_name, company_id):
+    User(name=user_name, companyId=company_id).save()
 
 
 def create_company(company_name):
