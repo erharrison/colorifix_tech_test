@@ -58,5 +58,17 @@ class Request(StructuredNode):
     company = RelationshipTo(User, "REQUEST_TARGET_COMPANY  ")
 
 
-all_nodes = Request.nodes.all()
-print(all_nodes)
+def create_user(user_name, copmany_id):
+    User(name=user_name, companyId=copmany_id).save()
+
+
+def create_company(company_name):
+    Company(name=company_name).save()
+
+
+def create_permission_group(permission_group_name):
+    Company(name=permission_group_name).save()
+
+
+def return_users():
+    print(User.nodes.all())

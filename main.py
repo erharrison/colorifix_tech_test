@@ -1,4 +1,5 @@
 import src.data as d
+import src.neo_connection as nc
 
 user_data = {
     "UserName": [
@@ -78,3 +79,11 @@ user_data = {
 create_data_df = d.create_data(user_data)
 
 d.export_data(create_data_df, "data/data.csv")
+
+nc.create_user("test@my-company.com", 1)
+
+nc.create_company("Test Company")
+
+nc.create_permission_group("Super User")
+
+nc.return_users()
