@@ -3,13 +3,15 @@ from neomodel import (config, StructuredNode, StringProperty, IntegerProperty,
 
 config.DATABASE_URL = "neo4j+s://e1345022.databases.neo4j.io"
 
+class AccessLevel(StructuredNode):
+    id = UniqueIdProperty()
+    name = StringProperty(required=True)
+
 class Permission(StructuredNode):
     id = UniqueIdProperty()
     name = StringProperty(required=True)
 
-class AccessLevel(StructuredNode):
-    id = UniqueIdProperty()
-    name = StringProperty(required=True)
+    access_level = RelationshipTo(AccessLevel, 'ENABLES_ACCESS_LEVEL')
 
 class Company(StructuredNode):
     id = UniqueIdProperty()
