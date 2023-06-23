@@ -8,3 +8,4 @@
 * Unit tests
 * Use OOP
 * Error Handling
+* Add constraints to nodes in neo_connection.py e.g. "A user must be assigned to an existing company"
