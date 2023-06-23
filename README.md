@@ -39,7 +39,7 @@ in development, so currently the database can't be altered or read from using th
 ## TODO List
 * Auto validate PEP8 standards in git CI/CD.
 * Unit tests.
-* Use OOP.
+* Use OOP. This would be particularly beneficial for copmletely replacing how the contents of main.py is currently run, as it's really messy right now.
 * Error Handling.
 * Add constraints to nodes in neo_connection.py to ensure foreign key ID's correspond to existing Primary keys in
 appropriate tables.
