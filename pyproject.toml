@@ -10,6 +10,7 @@ readme = "README.md"
 python = "^3.7"
 neo4j = "^5.9.0"
 neomodel = "^5.0.1"
+black = "^23.3.0"
 
 
 [build-system]
